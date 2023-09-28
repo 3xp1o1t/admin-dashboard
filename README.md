@@ -1,4 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Work in progress :v
+
+![Preview](/public/preview.png)
+
+## Testing out my front end skills with tailwind or maybe not.
+
+### Things todo
+
+- [x] Logo
+- [x] User avatar with popup menu
+- [x] Search bar with modal search
+- [x] Keybinding for search
+- [x] Categories
+- [x] Menu items
+- [x] Main content example.
+- [ ] Theme switcher w/b
+- [ ] Selection menu item when click/on current page.
+- [ ] UseRouter for each menu.
+- [ ] Grid box for main content.
+- [ ] Charts.
+- [ ] Sub menus.
+- [ ] Auth with roles
+- [ ] Conditional renderind based in roles.
+- [ ] Pet a cat if posible.
+
+### Notes
+
+- using https://www.nordtheme.com/ as a palette color
+- using shadcn
+- using local data, maybe later im gonna use prisma/drizzorm
+- project based on what i learn from code with antonio. :p
 
 ## Getting Started
 
@@ -19,18 +49,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
