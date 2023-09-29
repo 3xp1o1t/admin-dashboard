@@ -13,15 +13,16 @@
 - [x] Categories
 - [x] Menu items
 - [x] Main content example.
-- [ ] Theme switcher w/b
-- [ ] Selection menu item when click/on current page.
-- [ ] UseRouter for each menu.
+- [x] Theme switcher w/b
+- [x] Selection menu item when click/on current page.
+- [x] UseRouter for each menu.
 - [ ] Grid box for main content.
 - [ ] Charts.
 - [ ] Sub menus.
 - [ ] Auth with roles
 - [ ] Conditional renderind based in roles.
 - [ ] Pet a cat if posible.
+- [ ] R E F A C T O R :).
 
 ### Notes
 

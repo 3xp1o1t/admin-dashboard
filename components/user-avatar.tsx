@@ -17,8 +17,8 @@ export default function UserAvatar({ src, username, isAdmin }: UserInfo) {
           <AvatarImage src={src} />
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 text-xs font-medium text-black space-y-[2px]">
-        <DropdownMenuItem className="cursor-pointer px-3 py-2 text-sm">
+      <DropdownMenuContent className="w-56 text-xs font-medium text-black dark:text-neutral-400 space-y-[2px]">
+        <DropdownMenuItem className="cursor-pointer px-3 py-2 text-sm text-slate-700 dark:text-slate-400">
           {username}
           {isAdmin ? (
             <ShieldAlert className="h-4 w-4 ml-auto text-sky-500" />

@@ -7,7 +7,8 @@ export default function Logo({ logo }: SidebarProps) {
         fill
         src={logo}
         alt="appLogo"
-        className="object-center p-3 invert"
+        className="object-center p-3 dark:invert"
+        priority
       />
     </div>
   );

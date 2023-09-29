@@ -16,8 +16,8 @@ export type SidebarProps = {
   logo: string | 'vercel.svg';
 };
 
-export const user_test: UserInfo = {
-  src: 'https://userimage.com',
+export const userData: UserInfo = {
+  src: 'user.jpg',
   username: '3xp1o1t',
   isAdmin: true,
 };
@@ -39,19 +39,19 @@ export const menus: { category: string; items: Item[] }[] = [
     items: [
       {
         menu: 'Users',
-        slug: 'users',
+        slug: '/users',
         tooltip: 'User page',
         icon: 'users',
       },
       {
         menu: 'Products',
-        slug: 'products',
+        slug: '/products',
         tooltip: 'Products page',
         icon: 'products',
       },
       {
         menu: 'Providers',
-        slug: 'providers',
+        slug: '/providers',
         tooltip: 'Providers page',
         icon: 'providers',
       },
@@ -62,13 +62,13 @@ export const menus: { category: string; items: Item[] }[] = [
     items: [
       {
         menu: 'Server',
-        slug: 'server',
+        slug: '/server',
         tooltip: 'Server page',
         icon: 'server',
       },
       {
         menu: 'Charts',
-        slug: 'charts',
+        slug: '/charts',
         tooltip: 'Charts page',
         icon: 'charts',
       },
@@ -79,13 +79,13 @@ export const menus: { category: string; items: Item[] }[] = [
     items: [
       {
         menu: 'Lock',
-        slug: 'lock',
+        slug: '/lock',
         tooltip: 'lock app',
         icon: 'lock',
       },
       {
         menu: 'Info',
-        slug: 'info',
+        slug: '/info',
         tooltip: 'info page',
         icon: 'info',
       },
