@@ -16,6 +16,7 @@ import {
   Users2,
 } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
+import { ActionTooltip } from '../action-tooltip';
 import SidebarHeader from './sidebar-header';
 import SidebarSearch from './sidebar-search';
 import Logo from './siderbar-logo';
@@ -60,9 +61,11 @@ export default function Sidebar() {
       <Logo logo="next.svg" />
       <SidebarHeader />
       <ScrollArea className="flex-1 px-3">
-        <div className="mt-2">
-          <SidebarSearch />
-        </div>
+        <ActionTooltip label="Click for search or Ctrl+k">
+          <div className="mt-2">
+            <SidebarSearch />
+          </div>
+        </ActionTooltip>
         <Separator className="h-[1px] bg-slate-600 rounded-md my-2" />
         {menus.map((section) => (
           <div key={section.category}>
@@ -73,19 +76,21 @@ export default function Sidebar() {
             </div>
             {section?.items.map((item, i) => (
               <div key={i} className="space-y-[2px]">
-                <button
-                  onClick={() => onClick(item.slug)}
-                  className={cn(
-                    'group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-slate-700/10 dark:hover:bg-slate-700/50 transition mb-1',
-                    currentPath === item.slug &&
-                      'bg-slate-700/20 dark:bg-slate-700',
-                  )}
-                >
-                  {menuIconMap[item.icon as keyof typeof menuIconMap]}
-                  <p className="line-clamp-1 font-semibold text-sm text-slate-600 group-hover:text-slate-700 dark:text-slate-400 dark:group-hover:text-slate-300 transition">
-                    {item.menu}
-                  </p>
-                </button>
+                <ActionTooltip label={item.tooltip || 'click for more info...'}>
+                  <button
+                    onClick={() => onClick(item.slug)}
+                    className={cn(
+                      'group px-2 py-2 rounded-md flex items-center gap-x-2 w-full hover:bg-slate-700/10 dark:hover:bg-slate-700/50 transition mb-1',
+                      currentPath === item.slug &&
+                        'bg-slate-700/20 dark:bg-slate-700',
+                    )}
+                  >
+                    {menuIconMap[item.icon as keyof typeof menuIconMap]}
+                    <p className="line-clamp-1 font-semibold text-sm text-slate-600 group-hover:text-slate-700 dark:text-slate-400 dark:group-hover:text-slate-300 transition">
+                      {item.menu}
+                    </p>
+                  </button>
+                </ActionTooltip>
               </div>
             ))}
           </div>

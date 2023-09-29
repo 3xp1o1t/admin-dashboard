@@ -9,7 +9,6 @@ export type UserInfo = {
   src: string;
   username: string;
   isAdmin?: boolean;
-  tooltip?: string;
 };
 
 export type SidebarProps = {
