@@ -16,7 +16,7 @@
 - [x] Theme switcher w/b
 - [x] Selection menu item when click/on current page.
 - [x] UseRouter for each menu.
-- [ ] Grid box for main content.
+- [x] Grid box for main content.
 - [ ] Charts.
 - [ ] Sub menus.
 - [ ] Auth with roles
