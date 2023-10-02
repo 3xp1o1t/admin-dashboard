@@ -1,4 +1,11 @@
+import ChartBox from '@/components/charts/chart-box';
 import LastUsers from '@/components/home/last-users';
+import {
+  chartBoxConversion,
+  chartBoxProduct,
+  chartBoxRevenue,
+  chartsUsersData,
+} from '@/lib/menus';
 
 export default function HomePage() {
   return (
@@ -7,11 +14,19 @@ export default function HomePage() {
         <LastUsers />
       </div>
       <div className="bg-red-300 p-4">4</div>
-      <div className="bg-purple-300 p-4">5</div>
-      <div className="bg-pink-300 p-4">6</div>
+      <div className="p-4 rounded-lg border-slate-300 dark:border-slate-600 border-[1px]">
+        <ChartBox {...chartsUsersData} />
+      </div>
+      <div className="p-4 rounded-lg border-slate-300 dark:border-slate-600 border-[1px]">
+        <ChartBox {...chartBoxProduct} />
+      </div>
       <div className="bg-orange-300 row-span-2 col-span-2 p-4">7</div>
-      <div className="bg-indigo-300 p-4">8</div>
-      <div className="bg-teal-300 p-4">9</div>
+      <div className="p-4 rounded-lg border-slate-300 dark:border-slate-600 border-[1px]">
+        <ChartBox {...chartBoxRevenue} />
+      </div>
+      <div className="p-4 rounded-lg border-slate-300 dark:border-slate-600 border-[1px]">
+        <ChartBox {...chartBoxConversion} />
+      </div>
       <div className="bg-gray-300 row-span-3 p-4">13</div>
       <div className="bg-stone-300 p-4">16</div>
     </div>

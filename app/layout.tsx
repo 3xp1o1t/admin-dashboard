@@ -27,10 +27,10 @@ export default function RootLayout({
           storageKey="dashboard-theme"
         >
           <div className="h-full">
-            <div className="flex h-full w-56 z-20 flex-col fixed inset-y-0">
+            <div className="hidden md:flex h-full w-56 z-20 flex-col fixed inset-y-0">
               <Sidebar />
             </div>
-            <div className="flex flex-col h-full pl-60 pt-2">{children}</div>
+            <div className="flex flex-col h-full md:pl-60 pt-2">{children}</div>
           </div>
         </ThemeProvider>
       </body>
